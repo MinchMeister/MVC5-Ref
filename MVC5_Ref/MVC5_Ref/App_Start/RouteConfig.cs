@@ -13,11 +13,16 @@ namespace MVC5_Ref
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            routes.MapRoute(
-                name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
-            );
+            //routes.MapRoute(
+            //    name: "Default",
+            //    url: "{controller}/{action}/{id}",
+            //    defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+            //);
+
+
+            routes.MapRoute("404-NotFound", "PageNotFound", new { controller = "Base", action = "NotFound" });
+
+            routes.MapRoute("CatchAll", "{*url}", new { controller = "Base", action = "PageNotFound" });
         }
     }
 }

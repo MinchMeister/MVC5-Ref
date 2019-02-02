@@ -1,4 +1,5 @@
-﻿using System;
+﻿using log4net;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -6,8 +7,10 @@ using System.Web.Mvc;
 
 namespace MVC5_Ref.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
+        private static readonly ILog log = LogManager.GetLogger(typeof(HomeController));
+
         public ActionResult Index()
         {
             return View();
