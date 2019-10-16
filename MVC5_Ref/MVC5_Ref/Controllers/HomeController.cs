@@ -11,6 +11,7 @@ namespace MVC5_Ref.Controllers
     {
         private static readonly ILog log = LogManager.GetLogger(typeof(HomeController));
 
+        //[Route("Home/Index")]
         public ActionResult Index()
         {
             return View();

@@ -90,10 +90,10 @@ namespace MVC5_Ref
                         case 401:
                             Response.Redirect("PersonInfo/AccessDenied");
                             break;
-                        case 403;
+                        case 403:
                             Response.Redirect("Base/SessionLogout");
                             break;
-                        case 404;
+                        case 404:
                             Response.Redirect("PersonInfo/NotFound");
                             break;
                         default:

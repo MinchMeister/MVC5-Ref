@@ -9,12 +9,26 @@ using MVC5_Ref.Controllers;
 
 namespace MVC5_Ref.Tests.Controllers
 {
+
+    //Moq and MSTest
+
+
+
+
     [TestClass]
     public class HomeControllerTest
     {
         [TestMethod]
         public void Index()
         {
+            TimeSpan timeStart  = TimeSpan.Parse("08:00:00");
+            TimeSpan timeEnd    = TimeSpan.Parse("16:00:00");
+            TimeSpan timeNow    = DateTime.Now.TimeOfDay;
+
+
+            bool a = timeStart < timeNow && timeNow < timeEnd;
+
+
             // Arrange
             HomeController controller = new HomeController();
 

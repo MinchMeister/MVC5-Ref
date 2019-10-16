@@ -12,7 +12,7 @@ namespace MVC5_Ref.Services
 
         internal void GetLogonUserInformation()
         {
-            throw new NotImplementedException();
+           // throw new NotImplementedException();
         }
     }
 }

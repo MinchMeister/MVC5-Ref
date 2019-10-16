@@ -158,6 +158,7 @@
     <Compile Include="App_Start\Bundles\Foundation.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Constants\Constants.cs" />
     <Compile Include="Constants\Routes.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -169,20 +170,24 @@
     <Compile Include="Utils\AppSettingsGet.cs" />
     <Compile Include="Utils\CustomAuthorizationAttribute.cs" />
     <Compile Include="Utils\ExceptionFilter.cs" />
+    <Compile Include="Utils\HtmlHelpers.cs" />
     <Compile Include="Utils\NoCacheAttribute.cs" />
     <Compile Include="Utils\SessionWrapper.cs" />
     <Compile Include="Utils\TrimModelBinder.cs" />
+    <Compile Include="Utils\Validation\RequestTypeRequiredAttribute.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\foundation\foundation.css" />
     <Content Include="Content\foundation\foundation.mvc.css" />
     <Content Include="Content\foundation\normalize.css" />
+    <Content Include="Error.html" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="log4net.config" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\foundation\fastclick.js" />
     <Content Include="Scripts\foundation\foundation.abide.js" />
